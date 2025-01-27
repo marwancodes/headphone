@@ -1,2 +1,56 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Custom Colors */
+  .bg-primary {
+    background-color: #aa6d6b;
+  }
+
+  .bg-brandDark {
+    background: #151616;
+  }
+
+  /* Custom Fonts */
+  .font-poppins {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .font-varela {
+    font-family: "Varela Round", sans-serif;
+  }
+
+  /* Container Customizations */
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; /* Default */
+  }
+
+  @screen sm {
+    .container {
+      padding: 2rem;
+    }
+  }
+
+  @screen lg {
+    .container {
+      padding: 4rem;
+    }
+  }
+
+  @screen xl {
+    .container {
+      padding: 5rem;
+    }
+  }
+
+  @screen 2xl {
+    .container {
+      padding: 6rem;
+    }
+  }
+}
